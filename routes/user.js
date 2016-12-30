@@ -1,7 +1,7 @@
 const express = require('express');
 const router  =  new express.Router();
 
-const db = require('../db');
+const db   = require('../db');
 const User = db.mongoose.model('User');
 
 function getUsers(req, res) {
@@ -44,9 +44,9 @@ function createUser(req, res) {
 }
 
 
-router.get('/', getUsers);
-router.post('/', createUser);
-router.get('/:id', getUserById);
+router.get( '/',    getUsers);
+router.post('/',   createUser);
+router.get( '/:id', getUserById);
 
 
 module.exports = router;
