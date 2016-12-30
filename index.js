@@ -1,6 +1,7 @@
 require('dotenv').config();
-const server = require('./server');
-const db = require('./db');
+
+const server = require('./lib/server');
+const db     = require('./lib/db');
 
 db.connect((err) => {
   if (err) {
