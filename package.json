@@ -18,6 +18,8 @@
     "morgan": "^1.7.0"
   },
   "devDependencies": {
+    "eslint": "^3.12.2",
+    "eslint-config-x2": "^2.0.0",
     "nodemon": "^1.11.0"
   }
 }
